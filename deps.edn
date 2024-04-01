@@ -1,0 +1,10 @@
+{:jvm-opts ["-Duser.language=en" "-Duser.country=US" "-Dfile.encoding=UTF-8"]
+ :deps
+ {org.clojure/clojure {:mvn/version "1.11.2"}}
+ :aliases
+ {:dev
+  {:jvm-opts ["-ea"]
+   :extra-paths ["dev" "test"]
+   :extra-deps 
+   {io.github.tonsky/duti {:git/sha "4efca690ca3f048e7e0c5278bb0a1c34d283a71b"
+                           #_#_:local/root "/Users/tonsky/ws/duti"}}}}}
