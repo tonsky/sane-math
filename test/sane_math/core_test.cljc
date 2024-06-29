@@ -30,7 +30,11 @@
     ;; unicode
     (1 + 2 * 3 / 4 - 5) (- (+ 1 (/ (* 2 3) 4)) 5)
     (1 + 2 × 3 ÷ 4 − 5) (- (+ 1 (/ (* 2 3) 4)) 5)
-    
+
+    ;; comparison
+    (a > b < c)         (< (> a b) c)
+    (a >= b <= c)       (<= (>= a b) c)
+
     ;; all together
     (3 + 4 * 2 / (1 - 5) ** 2 ** 3) (+ 3 (/ (* 4 2) (clojure.math/pow (clojure.math/pow (- 1 5) 2) 3)))
     ))
